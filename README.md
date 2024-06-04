@@ -11,7 +11,7 @@ To run this application, Express v.4.16.4 and uuid v.9.0.1 must be installed. Th
 ## Usage
 On page load, the user is brought to a landing page with the title "Note Taker". After clicking the "Get Started" button, the user is brought to a page that has an empty notepad. The user is able to input a note title, and note content and click "Save note". Once the button is clicked, the note will appear on the left column, along with other saved notes. When the user clicks on a note from the left column, it will open on the right side and the user may view or edit the note. To delete a note, the user must click on the note to open it, and then click on the red trashcan next to the note title in the list. 
 
-Please follow this link to view this application on Heroku: 
+Please follow this link to view this application on Heroku: https://guarded-chamber-09756-838f275fa8b7.herokuapp.com/
 
 ![Alt text](./public/assets/images/notetaker1.png)
 ![Alt text](./public/assets/images/notetaker2.png)
