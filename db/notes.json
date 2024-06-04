@@ -1,17 +1,12 @@
 [
     {
-        "title": "Note 1",
-        "text": "Hello! This is my first note.",
-        "id": "e0e90ebb-cfef-42e7-aeba-2c2a29a68506"
+        "title": "Hello!",
+        "text": "This is a new note!",
+        "id": "15ce8604-9e22-45c0-8dd8-e6f3da66400a"
     },
     {
-        "title": "Note 2",
-        "text": "Bonjour! This is my second note.",
-        "id": "e0f585f9-5991-4fc5-9228-a345c0f04628"
-    },
-    {
-        "title": "Note 3",
-        "text": "Hola! This is my third note.",
-        "id": "756acb36-374c-459b-b56e-c564098166d2"
+        "title": "Hola! ",
+        "text": "This is another new note!\n",
+        "id": "ff26c904-66a0-4c9f-a727-0c0a6579aeac"
     }
 ]

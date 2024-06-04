@@ -12,14 +12,22 @@ notes.get('/', (req, res) => {
   });
 
   // DELETE Route for a specific note
-notes.delete('/id', (req, res) => {
+  notes.delete('/:id', (req, res) => {
     const noteId = req.params.id;
+  
     readFromFile('./db/notes.json')
       .then((data) => JSON.parse(data))
       .then((json) => {
         const result = json.filter((note) => note.id !== noteId);
-        writeToFile('./db/notes.json', result);
-        res.json(`Item ${noteId} has been deleted`);
+  
+        return writeToFile('./db/notes.json', result)
+          .then(() => {
+            res.json({ message: `Item ${noteId} has been deleted` });
+          });
+      })
+      .catch((err) => {
+        console.error(err);
+        res.status(500).json({ error: 'Failed to delete note' });
       });
   });
   
